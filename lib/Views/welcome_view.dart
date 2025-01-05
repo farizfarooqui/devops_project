@@ -1,5 +1,6 @@
 import 'package:devops_project/Views/form_view.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class DevOpsLandingPage extends StatelessWidget {
   const DevOpsLandingPage({super.key});
@@ -48,8 +49,7 @@ class DevOpsLandingPage extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
-                          context, const FormView() as Route<Object?>);
+                      Get.to(const UserFormPage());
                     },
                     child: const Text(
                       'Continue',
